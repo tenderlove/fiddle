@@ -7,7 +7,7 @@ on:
 jobs:
   host:
     name: >-
-      ${{ matrix.os }} ${{ matrix.ruby }}
+      ${{ matrix.os }} ${{ matrix.ruby }} ${{ matrix.build_flags }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
